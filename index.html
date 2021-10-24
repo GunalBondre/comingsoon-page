@@ -1,0 +1,80 @@
+<!-- this is index file we receive with frontend mentor challenge -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- custome style -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- parent class -->
+    <div class="main-container">
+      <!-- left-section-content-class -->
+      <div class="content-section">
+        <div class="content-section__wrapper">
+          <div class="content-section__content">
+            <!-- logo -->
+            <div class="content-section__logo">
+              <img src="./images/logo.svg" alt="logo" />
+            </div>
+
+            <!-- coming soon text -->
+            <div class="content-section__text">
+              <h1><span class="pink-text">we're</span>coming soon</h1>
+              <p class="para-text">
+                Hello fello shoppers we are currently building our new fashion
+                store. Add your email below to stay up to date with announcment
+                and our launch date
+              </p>
+              <form action="">
+                <input
+                  type="email"
+                  name=""
+                  placeholder="Email Address"
+                  id=""
+                  required
+                  pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
+                "
+                />
+                <button><img src="./images/icon-arrow.svg" alt="" /></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- left-section-content-class end -->
+      <!-- right-secton-image-class -->
+      <div class="image-section">
+        <picture>
+          <source
+            media="(min-width:500px)"
+            srcset="./images/hero-desktop.jpg"
+          />
+          <source media="(max-width:480px)" srcset="./images/hero-mobile.jpg" />
+          <img src="./images/hero-desktop.jpg" alt="desktop-hero" />
+        </picture>
+      </div>
+    </div>
+  </body>
+</html>
